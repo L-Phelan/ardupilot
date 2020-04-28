@@ -82,7 +82,7 @@
  # define FLIGHT_MODE_1                  Mode::Number::RTL
 #endif
 #if !defined(FLIGHT_MODE_2)
- # define FLIGHT_MODE_2                  Mode::Number::RTL
+ # define FLIGHT_MODE_2                  Mode::Number::LTEST
 #endif
 #if !defined(FLIGHT_MODE_3)
  # define FLIGHT_MODE_3                  Mode::Number::FLY_BY_WIRE_A

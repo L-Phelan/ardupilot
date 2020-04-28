@@ -156,7 +156,7 @@ public:
     friend class ModeQAcro;
     friend class ModeQAutotune;
     friend class ModeTakeoff;
-    friend class ModeLtest
+    friend class ModeLtest;
 
     Plane(void);
 
