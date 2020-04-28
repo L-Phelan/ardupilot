@@ -38,6 +38,7 @@ public:
         QRTL          = 21,
         QAUTOTUNE     = 22,
         QACRO         = 23,
+        LTEST         = 24,     // Liv's test mode
     };
 
     // Constructor
@@ -477,6 +478,22 @@ protected:
 
     bool takeoff_started;
     Location start_loc;
+
+    bool _enter() override;
+};
+
+class ModeLtest : public Mode
+{
+public:
+
+    Number mode_number() const override { return Number::LTEST; }
+    const char *name() const override { return "LTEST"; }
+    const char *name4() const override { return "LTST"; }
+
+    // methods that affect movement of the vehicle in this mode
+    void update() override;
+
+protected:
 
     bool _enter() override;
 };
